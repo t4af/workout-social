@@ -1,3 +1,12 @@
+"""
+    INSTALLATIONS:
+    * Google Cloud SQL Connector
+        * For Windows, go to Command Prompt and type the following:
+            * python -m pip install --upgrade pip
+                * This updates Pip to the latest version
+            * pip install cloud-sql-python-connector[pymysql]
+                * This installs the connector to your local device
+"""
 import getpass
 import os
 from google.cloud.sql.connector import connector
@@ -19,9 +28,9 @@ class GcpSqlConnection:
     def connect(self):
         """
             NOTES:
-                * Having trouble seeing the password prompt?
-                    * If using Pycharm, go to the run configuration and check the box for
-                      "Emulate terminal in output console"
+            * Having trouble seeing the password prompt?
+                * If using Pycharm, go to the run configuration and check the box for
+                  "Emulate terminal in output console"
         """
         print("Username: %s" % self.username)
         pswd = getpass.getpass(prompt="Password: ")
