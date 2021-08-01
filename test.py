@@ -1,4 +1,4 @@
-print("Hello World!")
+#print("Hello World!")
 
 e1 = "Bicep Curls"
 e2 = "Tricep Extensions"
