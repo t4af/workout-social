@@ -1,5 +1,8 @@
 print("Hello World!")
 
+exercise = ("Bicep Curls", 3)
+exercises = [("Bicep Curls", 3), ("Tricep Curls", 4)]
+
 numberOfExercises = input("How many exercises are you gonna do?\n")
 numberOfExercises = int(numberOfExercises)
 for x in range(0,numberOfExercises):
